@@ -2,6 +2,9 @@ package tree.mytest;
 
 import tree.TreeNode;
 
+import java.io.IOException;
+import java.nio.channels.ServerSocketChannel;
+
 /**
  * 给定一棵二叉树的头节点，任何两个节点之间都存在距离
  * 返回整棵二叉树的最大距离
@@ -45,7 +48,7 @@ public class FindTreeMaxDistance {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         TreeNode head = new TreeNode(1);
         head.left = new TreeNode(2);
         System.out.println(findTreeMaxDistance(head));
